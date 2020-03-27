@@ -1,16 +1,14 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
-const path = require('path');
-
 
 const app = express()
 const basicAuth = require('express-basic-auth')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-app.use(basicAuth({
-    users: { 'kira': 'mantapbanget' }
-}))
+// app.use(basicAuth({
+//     users: { 'kira': 'mantapbanget' }
+// }))
 
 app.get('/', (req, res) => res.send({
     'status': 0,
