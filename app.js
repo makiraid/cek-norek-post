@@ -15,7 +15,7 @@ app.get('/', (req, res) => res.send({
     'response': {
         'path': '/api/v1/no-rek',
         'methode': 'POST',
-        'auth': 'Basic a2lyYTptYW50YXBiYW5nZXQ=',
+        // 'auth': 'Basic a2lyYTptYW50YXBiYW5nZXQ=',
         'body': {
             'kodeBank': ' ',
             'noRek': ' '
@@ -28,7 +28,7 @@ app.get('/api/v1/no-rek', (req, res) => res.send({
     'status': 0,
     'response': {
         'methode': 'POST',
-        'auth': 'Basic a2lyYTptYW50YXBiYW5nZXQ=',
+        // 'auth': 'Basic a2lyYTptYW50YXBiYW5nZXQ=',
         'body': {
             'kodeBank': ' ',
             'noRek': ' '
