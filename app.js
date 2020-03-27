@@ -8,10 +8,6 @@ app.use(bodyParser.json())
 app.use(basicAuth({
     users: { 'kira': 'mantapbanget' }
 }))
-
-app.get('/', function (req, res) {
-    res.send('hola')
-})
   
 app.post('/api/v1/no-rek', async (req, res) => {
     const params = {
