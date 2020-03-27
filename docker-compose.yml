@@ -1,0 +1,10 @@
+version: '2'
+services:
+  norek-post:
+    build: .
+    command: npm start
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "2020:2020"
